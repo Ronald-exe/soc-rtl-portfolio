@@ -1,0 +1,70 @@
+module mult_with_no_sm#(
+  parameter N = 4
+)(
+  input logic clk,
+  input logic rst,
+  
+  input logic [N-1:0] A,
+  input logic [N-1:0] B,
+  
+  input logic load_A,
+  input logic load_B,
+  input logic load_add,
+  input logic shift_HQ_LQ_Q_1,
+  input logic add_sub,
+  
+  output logic [1:0] Q_LSB,
+  output logic [2*N-1:0] Y
+);
+ 
+  logic [N-1:0] M;
+  logic [N-1:0] adder_sub_out;
+  logic signed [2*N:0] shift;
+  logic [N-1:0] HQ;
+  logic [N-1:0] LQ;
+  logic Q_1;
+  
+  //reg_M
+
+  always_ff@(posedge clk) begin 
+    if(rst) 
+      M<='b0;
+    else 
+      M <= (load_A)? A : M;
+  end
+  
+  // adder/sub
+  
+  always_comb begin 
+    if(add_sub) 
+      adder_sub_out = HQ + M;
+    else
+      adder_sub_out = HQ - M;
+  end
+  
+  //shift registers
+  
+  always_comb begin 
+    
+    HQ = shift[2*N:N+1];
+    LQ = shift[N:1];
+    Q_1 = shift[0];
+    Q_LSB = {LQ[0],Q_1};
+	Y = {HQ,LQ};
+  end
+  
+  always_ff@(posedge clk) begin 
+    if(rst)
+      shift <= 'b0;
+    else if(shift_HQ_LQ_Q_1)
+      //arithmetic shift
+      shift <= ($signed(shift))>>>1;
+    else begin 
+      if(load_B)
+        shift[N:1] <= B;
+      if(load_add)
+        shift[2*N:N+1] <= adder_sub_out;
+      end
+  end
+  
+endmodule

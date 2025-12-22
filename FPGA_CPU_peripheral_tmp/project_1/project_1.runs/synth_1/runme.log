@@ -1,0 +1,731 @@
+
+*** Running vivado
+    with args -log top_basys_cpu.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_basys_cpu.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top_basys_cpu.tcl -notrace
+Command: synth_design -top top_basys_cpu -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12228 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 713.480 ; gain = 176.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_basys_cpu' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/top_basys_cpu.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'top_cpu_10MHz' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/top_cpu_10MHz.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'pll' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/PLL/pll.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_10MHz' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.runs/synth_1/.Xil/Vivado-5756-DESKTOP-TUFQ35Q/realtime/clk_wiz_10MHz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_10MHz' (1#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.runs/synth_1/.Xil/Vivado-5756-DESKTOP-TUFQ35Q/realtime/clk_wiz_10MHz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pll' (2#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/PLL/pll.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Reset' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Antirebote/Reset.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Reset' (3#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Antirebote/Reset.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Top_filtros' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Top_filtros.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Top_Antirebote' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Antirebote/Top_Antirebote.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Filtro_Antirebotes' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Antirebote/Filtro_Antirebotes.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Filtro_Antirebotes' (4#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Antirebote/Filtro_Antirebotes.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX_Filtro' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Antirebote/MUX_Filtro.sv:4]
+INFO: [Synth 8-226] default block is never used [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Antirebote/MUX_Filtro.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_Filtro' (5#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Antirebote/MUX_Filtro.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'Sincronizador' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Antirebote/Sincronizador.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Sincronizador' (6#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Antirebote/Sincronizador.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Filtro_boton' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Antirebote/Filtro_boton.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Filtro_boton' (7#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Antirebote/Filtro_boton.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Antirebote' (8#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Antirebote/Top_Antirebote.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_filtros' (9#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Top_filtros/Top_filtros.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'top_cpu' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/top_cpu.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'rv32i' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/rv32i.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/adder.sv:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder' (10#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/adder.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'mux_2' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/mux_2.sv:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux_2' (11#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/mux_2.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'mux_4' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/mux_4.sv:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/mux_4.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4' (12#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/mux_4.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'pc_rv32i' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/pc_rv32i.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'pc_rv32i' (13#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/pc_rv32i.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'register_file_rv32i' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/register_file_rv32i.sv:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register_file_rv32i' (14#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/register_file_rv32i.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'extend_rv32i' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/extend_rv32i.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'extend_rv32i' (15#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/extend_rv32i.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'alu_rv32i' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/ALU/alu_rv32i.sv:3]
+	Parameter W bound to: 32 - type: integer 
+	Parameter LP_SHAMT_W bound to: 32'sb00000000000000000000000000000101 
+INFO: [Synth 8-6157] synthesizing module 'mux_alu_result' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/ALU/mux_alu_result.sv:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux_alu_result' (16#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/ALU/mux_alu_result.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'mux_alu_flags' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/ALU/mux_alu_flags.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux_alu_flags' (17#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/ALU/mux_alu_flags.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'sumador' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/ALU/sumador.sv:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sumador' (18#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/ALU/sumador.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'restador' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/ALU/restador.sv:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'restador' (19#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/ALU/restador.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'alu_rv32i' (20#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/ALU/alu_rv32i.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'branch_unit_rv32i' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/branch_unit_rv32i.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'branch_unit_rv32i' (21#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/branch_unit_rv32i.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'control_unit_rv32i' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/control_unit_rv32i.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit_rv32i' (22#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/control_unit_rv32i.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'rv32i' (23#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/rv32i.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'instr_mem' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.runs/synth_1/.Xil/Vivado-5756-DESKTOP-TUFQ35Q/realtime/instr_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'instr_mem' (24#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.runs/synth_1/.Xil/Vivado-5756-DESKTOP-TUFQ35Q/realtime/instr_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.runs/synth_1/.Xil/Vivado-5756-DESKTOP-TUFQ35Q/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (25#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.runs/synth_1/.Xil/Vivado-5756-DESKTOP-TUFQ35Q/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Perifericos' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Perifericos.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Selector' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Selector.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Selector' (26#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Selector.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'LEDs' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/LEDs.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'LEDs' (27#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/LEDs.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Displaypath' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/Displaypath.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'simple_register' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/simple_register.sv:3]
+	Parameter W bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'simple_register' (28#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/simple_register.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'simple_timer' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/simple_timer.sv:3]
+	Parameter MOD bound to: 10000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'simple_timer' (29#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/simple_timer.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'simple_counter' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/simple_counter.sv:3]
+	Parameter MOD bound to: 4 - type: integer 
+	Parameter i bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'simple_counter' (30#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/simple_counter.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'deco_an' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/deco_an.sv:1]
+INFO: [Synth 8-226] default block is never used [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/deco_an.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'deco_an' (31#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/deco_an.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_4__parameterized0' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/mux_4.sv:3]
+	Parameter W bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/mux_4.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4__parameterized0' (31#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/mux_4.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'deco_seg' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/deco_seg.sv:1]
+INFO: [Synth 8-226] default block is never used [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/deco_seg.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'deco_seg' (32#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/deco_seg.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Displaypath' (33#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Displaypath/Displaypath.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Switches' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Switches.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Switches' (34#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Switches.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'timer' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/timer.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (35#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/timer.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Top_TMP' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/Top_TMP.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ADC' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/ADC.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.runs/synth_1/.Xil/Vivado-5756-DESKTOP-TUFQ35Q/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (36#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.runs/synth_1/.Xil/Vivado-5756-DESKTOP-TUFQ35Q/realtime/xadc_wiz_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'ADC' of module 'xadc_wiz_0' has 17 connections declared, but only 15 given [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/ADC.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'ADC' (37#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/ADC.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/MUX.sv:3]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/MUX.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (38#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/MUX.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'control_TMP' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/TMP.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/TMP.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'control_TMP' (39#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/TMP.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'registro_control' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/reg_ctrl.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'registro_control' (40#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/reg_ctrl.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'registros_datos' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/reg_datos.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'registros_datos' (41#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/reg_datos.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX__parameterized0' [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/MUX.sv:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/MUX.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'MUX__parameterized0' (41#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/MUX.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_TMP' (42#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/TMP/Top_TMP.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Perifericos' (43#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/Perifericos/Perifericos.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_cpu' (44#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/RV32I/top_cpu.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_cpu_10MHz' (45#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/top_cpu_10MHz.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_basys_cpu' (46#1) [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/imports/Nueva carpeta/top_basys_cpu.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 778.914 ; gain = 242.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 778.914 ; gain = 242.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 778.914 ; gain = 242.293
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/ip/clk_wiz_10MHz/clk_wiz_10MHz/clk_wiz_10MHz_in_context.xdc] for cell 'cpu_pll/PLL_10MHz/clk_10MHz'
+Finished Parsing XDC File [c:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/ip/clk_wiz_10MHz/clk_wiz_10MHz/clk_wiz_10MHz_in_context.xdc] for cell 'cpu_pll/PLL_10MHz/clk_10MHz'
+Parsing XDC File [c:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'cpu_pll/cpu_10MHz/perifericos1/TMP/adc/ADC'
+Finished Parsing XDC File [c:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'cpu_pll/cpu_10MHz/perifericos1/TMP/adc/ADC'
+Parsing XDC File [c:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/ip/data_mem/data_mem/data_mem_in_context.xdc] for cell 'cpu_pll/cpu_10MHz/data_mem1'
+Finished Parsing XDC File [c:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/ip/data_mem/data_mem/data_mem_in_context.xdc] for cell 'cpu_pll/cpu_10MHz/data_mem1'
+Parsing XDC File [c:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/ip/instr_mem/instr_mem/instr_mem_in_context.xdc] for cell 'cpu_pll/cpu_10MHz/instr_mem1'
+Finished Parsing XDC File [c:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/ip/instr_mem/instr_mem/instr_mem_in_context.xdc] for cell 'cpu_pll/cpu_10MHz/instr_mem1'
+Parsing XDC File [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/constrs_1/imports/Nueva carpeta/Basys-3-Master.xdc]
+Finished Parsing XDC File [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/constrs_1/imports/Nueva carpeta/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/constrs_1/imports/Nueva carpeta/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_basys_cpu_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_basys_cpu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 916.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 916.133 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 916.133 ; gain = 379.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 916.133 ; gain = 379.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/ip/clk_wiz_10MHz/clk_wiz_10MHz/clk_wiz_10MHz_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.srcs/sources_1/ip/clk_wiz_10MHz/clk_wiz_10MHz/clk_wiz_10MHz_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for cpu_pll/PLL_10MHz/clk_10MHz. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cpu_pll/cpu_10MHz/perifericos1/TMP/adc/ADC. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cpu_pll/cpu_10MHz/data_mem1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cpu_pll/cpu_10MHz/instr_mem1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 916.133 ; gain = 379.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ResultSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ImmSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AluOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'est_reg' in module 'control_TMP'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                               00 |                               00
+                      s1 |                               01 |                               01
+                      s2 |                               10 |                               11
+                      s3 |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'est_reg' using encoding 'sequential' in module 'control_TMP'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 916.133 ; gain = 379.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 38    
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   4 Input     32 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 58    
+	   3 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 5     
+	   8 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pll 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Filtro_Antirebotes 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module MUX_Filtro 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module Sincronizador 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module Filtro_boton 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux_2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux_4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module pc_rv32i 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module register_file_rv32i 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 32    
+Module mux_alu_flags 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 4     
+Module sumador 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+Module restador 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module alu_rv32i 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
+Module branch_unit_rv32i 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module control_unit_rv32i 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      4 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 5     
+Module Selector 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 4     
+Module LEDs 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module simple_register 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module simple_timer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module simple_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module deco_an 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module mux_4__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module Switches 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module timer 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+Module MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module control_TMP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module registro_control 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module registros_datos 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUX__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Control_Unit/ResultSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Control_Unit/ImmSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Control_Unit/AluOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'cpu_pll/filtros_botones/b1/mux_f/filtro_reg[0]' (FDE) to 'cpu_pll/filtros_botones/b3/mux_f/filtro_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/filtros_botones/b3/mux_f/filtro_reg[1]' (FDE) to 'cpu_pll/filtros_botones/b1/mux_f/filtro_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/filtros_botones/b3/mux_f/filtro_reg[0]' (FDE) to 'cpu_pll/filtros_botones/b2/mux_f/filtro_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/filtros_botones/b0/mux_f/filtro_reg[0]' (FDE) to 'cpu_pll/filtros_botones/b2/mux_f/filtro_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/filtros_botones/b2/mux_f/filtro_reg[1]' (FDE) to 'cpu_pll/filtros_botones/b1/mux_f/filtro_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/filtros_botones/b2/mux_f/filtro_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/cpu_10MHz/perifericos1/Botones_Switches/data_btn_sw_o_reg[21] )
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[21]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/cpu_10MHz/perifericos1/Botones_Switches/data_btn_sw_o_reg[29] )
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[29]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[13]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[17]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/cpu_10MHz/perifericos1/Botones_Switches/data_btn_sw_o_reg[25] )
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[25]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[9]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[19]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/cpu_10MHz/perifericos1/Botones_Switches/data_btn_sw_o_reg[27] )
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[27]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[11]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/cpu_10MHz/perifericos1/Botones_Switches/data_btn_sw_o_reg[31] )
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[31]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[15]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/cpu_10MHz/perifericos1/Botones_Switches/data_btn_sw_o_reg[23] )
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[23]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/cpu_10MHz/perifericos1/Botones_Switches/data_btn_sw_o_reg[20] )
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[20]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/cpu_10MHz/perifericos1/Botones_Switches/data_btn_sw_o_reg[28] )
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[28]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[12]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[16]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/cpu_10MHz/perifericos1/Botones_Switches/data_btn_sw_o_reg[24] )
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[24]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[8]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[18]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/cpu_10MHz/perifericos1/Botones_Switches/data_btn_sw_o_reg[26] )
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[26]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[10]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/cpu_10MHz/perifericos1/Botones_Switches/data_btn_sw_o_reg[30] )
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[30]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[14]' (FDCE) to 'cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/cpu_10MHz/perifericos1/Botones_Switches/data_btn_sw_o_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_pll/cpu_10MHz/perifericos1/TMP/reg_datos/control_data_reg[22] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 916.133 ; gain = 379.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'cpu_pll/PLL_10MHz/clk_10MHz/clk_out1' to pin 'cpu_pll/PLL_10MHz/clk_10MHz/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 916.133 ; gain = 379.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1144.012 ; gain = 607.391
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 1144.012 ; gain = 607.391
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_pll/cpu_10MHz/perifericos1/TMP/adc/ADC  has unconnected pin reset_in
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1144.012 ; gain = 607.391
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1144.012 ; gain = 607.391
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1144.012 ; gain = 607.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1144.012 ; gain = 607.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1144.012 ; gain = 607.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1144.012 ; gain = 607.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_basys_cpu | cpu_pll/reset/out_reg                        | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_basys_cpu | cpu_pll/filtros_botones/b0/dit/filtro_reg[0] | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|top_basys_cpu | cpu_pll/filtros_botones/b1/dit/filtro_reg[0] | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|top_basys_cpu | cpu_pll/filtros_botones/b2/dit/filtro_reg[0] | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|top_basys_cpu | cpu_pll/filtros_botones/b3/dit/filtro_reg[0] | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++--------------+----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_10MHz |         1|
+|2     |instr_mem     |         1|
+|3     |data_mem      |         1|
+|4     |xadc_wiz_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |clk_wiz_10MHz |     1|
+|2     |data_mem      |     1|
+|3     |instr_mem     |     1|
+|4     |xadc_wiz_0    |     1|
+|5     |BUFG          |     1|
+|6     |CARRY4        |    56|
+|7     |LUT1          |     3|
+|8     |LUT2          |   180|
+|9     |LUT3          |    60|
+|10    |LUT4          |   122|
+|11    |LUT5          |   246|
+|12    |LUT6          |   846|
+|13    |MUXF7         |   293|
+|14    |MUXF8         |    67|
+|15    |SRL16E        |     5|
+|16    |FDCE          |  1232|
+|17    |FDPE          |     1|
+|18    |FDRE          |    76|
+|19    |IBUF          |    25|
+|20    |OBUF          |    27|
++------+--------------+------+
+
+Report Instance Areas: 
++------+-------------------------+---------------------+------+
+|      |Instance                 |Module               |Cells |
++------+-------------------------+---------------------+------+
+|1     |top                      |                     |  3332|
+|2     |  cpu_pll                |top_cpu_10MHz        |  3279|
+|3     |    PLL_10MHz            |pll                  |     4|
+|4     |    cpu_10MHz            |top_cpu              |  3216|
+|5     |      cpu                |rv32i                |  2762|
+|6     |        ALU              |alu_rv32i            |    24|
+|7     |          Restador       |restador             |    16|
+|8     |          Sumador        |sumador              |     8|
+|9     |        Adder_PCPlus4    |adder                |     8|
+|10    |        Adder_PCTarget   |adder_12             |     8|
+|11    |        Program_Counter  |pc_rv32i             |   120|
+|12    |        Register_File    |register_file_rv32i  |  2602|
+|13    |      perifericos1       |Perifericos          |   382|
+|14    |        Botones_Switches |Switches             |    20|
+|15    |        Display7seg      |Displaypath          |    61|
+|16    |          C_Display      |simple_counter       |     8|
+|17    |          Register_n16   |simple_register      |    27|
+|18    |          n_1milisec     |simple_timer         |    26|
+|19    |        Leds             |LEDs                 |    16|
+|20    |        TMP              |Top_TMP              |    98|
+|21    |          TMP_i          |control_TMP          |    16|
+|22    |          adc            |ADC                  |    26|
+|23    |          reg_control    |registro_control     |    48|
+|24    |          reg_datos      |registros_datos      |     8|
+|25    |        Timer            |timer                |   187|
+|26    |    filtros_botones      |Top_filtros          |    53|
+|27    |      b0                 |Top_Antirebote       |    17|
+|28    |        dat              |Filtro_Antirebotes_9 |     6|
+|29    |        det              |Sincronizador_10     |     6|
+|30    |        dit              |Filtro_boton_11      |     4|
+|31    |        mux_f            |MUX_Filtro           |     1|
+|32    |      b1                 |Top_Antirebote_0     |    12|
+|33    |        dat              |Filtro_Antirebotes_6 |     5|
+|34    |        det              |Sincronizador_7      |     3|
+|35    |        dit              |Filtro_boton_8       |     4|
+|36    |      b2                 |Top_Antirebote_1     |    12|
+|37    |        dat              |Filtro_Antirebotes_3 |     5|
+|38    |        det              |Sincronizador_4      |     3|
+|39    |        dit              |Filtro_boton_5       |     4|
+|40    |      b3                 |Top_Antirebote_2     |    12|
+|41    |        dat              |Filtro_Antirebotes   |     5|
+|42    |        det              |Sincronizador        |     3|
+|43    |        dit              |Filtro_boton         |     4|
+|44    |    reset                |Reset                |     6|
++------+-------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1144.012 ; gain = 607.391
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 1144.012 ; gain = 470.172
+Synthesis Optimization Complete : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1144.012 ; gain = 607.391
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 416 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1144.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+168 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:01:40 . Memory (MB): peak = 1144.012 ; gain = 852.051
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1144.012 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Taller_digitales/lab4/Funcional_control_cpu/Nueva carpeta/Nueva carpeta/project_1/project_1.runs/synth_1/top_basys_cpu.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1144.012 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file top_basys_cpu_utilization_synth.rpt -pb top_basys_cpu_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 16 00:39:36 2025...

@@ -1,0 +1,14 @@
+8:-out_dir
+97:/mnt/vol_NFS_mentordata/home/DL2021004089/tarea3-griii-6/Tarea3/Ronald/project_2_impl_1//rtlc.out
+10:-pipe_flow
+2:-v
+87:/mnt/vol_NFS_mentorinstall/siemens/presicion/Mgc_home/pkgs/rtlc_psr/rtlc/lib/unimacro.v
+2:-v
+96:/mnt/vol_NFS_mentorinstall/siemens/presicion/Mgc_home/pkgs/rtlc_psr/rtlc/lib/xcv7_retarget_lib.v
+4:-svf
+114:/mnt/vol_NFS_mentordata/home/DL2021004089/tarea3-griii-6/Tarea3/Ronald/project_2_impl_1//hdlAnalyze_sysverilogfile
+25:-comment_transoff_regions
+13:-lib_map_file
+97:/mnt/vol_NFS_mentordata/home/DL2021004089/tarea3-griii-6/Tarea3/Ronald/project_2_impl_1//.jaguarc
+78:+incdir+/mnt/vol_NFS_mentordata/home/DL2021004089/tarea3-griii-6/Tarea3/Ronald
+17:+define+synthesis

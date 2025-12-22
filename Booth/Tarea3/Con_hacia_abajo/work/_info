@@ -1,0 +1,77 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/mnt/vol_NFS_mentordata/home/DL2021142389/DL/Tareas/tarea_3/Con_hacia_abajo
+T_opt
+!s110 1699462573
+V0L_Ng5?=1_Jk=1dDd<@he1
+04 18 4 work tb_con_hacia_abajo fast 0
+=1-005056aae3c7-654bbdac-eacb8-bc6b
+R1
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+vcon_hacia_abajo
+2con_hacia_abajo.sv
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1699462572
+!i10b 1
+!s100 Ul;ZRFbkJn0:C;jl^m9gG0
+IgP>62gNMoAk][SPSGeU?P0
+S1
+R2
+w1699461314
+8con_hacia_abajo.sv
+Fcon_hacia_abajo.sv
+!i122 2
+L0 1 31
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z8 !s108 1699462572.000000
+!s107 con_hacia_abajo.sv|
+!s90 -sv|con_hacia_abajo.sv|
+!i113 0
+Z9 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vtb_con_hacia_abajo
+2tb_con_hacia_abajo.sv
+R4
+R5
+!i10b 1
+!s100 oBJ^>8FJ5?Xd?:XRTHB5z2
+I1;Fnmd3L2MU?8nlg;TjKd0
+S1
+R2
+w1699461451
+8tb_con_hacia_abajo.sv
+Ftb_con_hacia_abajo.sv
+!i122 3
+L0 2 53
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 tb_con_hacia_abajo.sv|
+!s90 -sv|tb_con_hacia_abajo.sv|
+!i113 0
+R9
+R3

@@ -1,0 +1,4 @@
+22 serialization::archive 18 0 1 0
+0 0 0 1 16 0 0 0 16 work.sub_lectura 3 1 0
+1 16 work.sub_lectura 14 sub_lectura__0 8 _no_attr 11 sub_lectura 99 /mnt/vol_NFS_mentordata/home/DL2021142389/DL/Tareas/tarea3-griii-6/sub_lectura-nuevo/sub_lectura.sv 1 0 0 1 16 0 0 0 14 sub_lectura__0 6 1 0
+2 14 sub_lectura__0 0 0 0 16 0 0 0 0 16 0 0

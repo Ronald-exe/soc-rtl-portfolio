@@ -1,0 +1,124 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Jun 16 00:40:33 2025
+| Host         : DESKTOP-TUFQ35Q running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_basys_cpu_control_sets_placed.rpt
+| Design       : top_basys_cpu
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    46 |
+|    Minimum number of control sets                        |    46 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    35 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    46 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    41 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               9 |            4 |
+| No           | No                    | Yes                    |              59 |           22 |
+| No           | Yes                   | No                     |              51 |           15 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1174 |          605 |
+| Yes          | Yes                   | No                     |              16 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|                Clock Signal                |                           Enable Signal                          |                             Set/Reset Signal                             | Slice Load Count | Bel Load Count |
++--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|  cpu_pll/PLL_10MHz/clk_10MHz/inst/clk_out1 |                                                                  | btnC_IBUF                                                                |                1 |              1 |
+|  clk_10MHz                                 |                                                                  | cpu_pll/cpu_10MHz/perifericos1/TMP/TMP_i/contador[3]_i_1_n_0             |                2 |              4 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/perifericos1/TMP/TMP_i/E[0]                    | btnC_IBUF                                                                |                2 |              8 |
+|  clk_10MHz                                 |                                                                  |                                                                          |                4 |             14 |
+|  clk_10MHz                                 |                                                                  | cpu_pll/cpu_10MHz/perifericos1/Display7seg/n_1milisec/conta_o[0]_i_1_n_0 |                4 |             14 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/E[0]                         | btnC_IBUF                                                                |                4 |             16 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/ctrl[31]_i_2_0[0]            | btnC_IBUF                                                                |                4 |             16 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/ctrl[31]_i_4[0]              | btnC_IBUF                                                                |               11 |             30 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[10][31]_i_1_n_0          | btnC_IBUF                                                                |               17 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[16][31]_i_1_n_0          | btnC_IBUF                                                                |               15 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[1][31]_i_1_n_0           | btnC_IBUF                                                                |               17 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[2][31]_i_1_n_0           | btnC_IBUF                                                                |               16 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[26][31]_i_1_n_0          | btnC_IBUF                                                                |               13 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[30][31]_i_1_n_0          | btnC_IBUF                                                                |               22 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[0][31]_i_1_n_0           | btnC_IBUF                                                                |               19 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[11][31]_i_1_n_0          | btnC_IBUF                                                                |               16 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[12][31]_i_1_n_0          | btnC_IBUF                                                                |                8 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[14][31]_i_1_n_0          | btnC_IBUF                                                                |               25 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[17][31]_i_1_n_0          | btnC_IBUF                                                                |               17 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[19][31]_i_1_n_0          | btnC_IBUF                                                                |               18 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[20][31]_i_1_n_0          | btnC_IBUF                                                                |               17 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[15][31]_i_1_n_0          | btnC_IBUF                                                                |               26 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[21][31]_i_1_n_0          | btnC_IBUF                                                                |               13 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[23][31]_i_1_n_0          | btnC_IBUF                                                                |               21 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[24][31]_i_1_n_0          | btnC_IBUF                                                                |               14 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[25][31]_i_1_n_0          | btnC_IBUF                                                                |               12 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[18][31]_i_1_n_0          | btnC_IBUF                                                                |               18 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[27][31]_i_1_n_0          | btnC_IBUF                                                                |               16 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[22][31]_i_1_n_0          | btnC_IBUF                                                                |               14 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/perifericos1/Timer/sel                         | btnC_IBUF                                                                |                8 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/perifericos1/Timer/data_0                      | btnC_IBUF                                                                |                9 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[5][31]_i_1_n_0           | btnC_IBUF                                                                |               19 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[9][31]_i_1_n_0           | btnC_IBUF                                                                |               25 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[31][31]_i_1_n_0          | btnC_IBUF                                                                |               24 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[6][31]_i_1_n_0           | btnC_IBUF                                                                |               15 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[8][31]_i_1_n_0           | btnC_IBUF                                                                |               22 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[3][31]_i_1_n_0           | btnC_IBUF                                                                |               15 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[7][31]_i_1_n_0           | btnC_IBUF                                                                |               23 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/FSM_sequential_est_reg[0][0] | btnC_IBUF                                                                |                9 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[28][31]_i_1_n_0          | btnC_IBUF                                                                |               14 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[29][31]_i_1_n_0          | btnC_IBUF                                                                |               14 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[13][31]_i_1_n_0          | btnC_IBUF                                                                |               18 |             32 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/mem[4][31]_i_1_n_0           | btnC_IBUF                                                                |               19 |             32 |
+|  clk_10MHz                                 |                                                                  | cpu_pll/reset/out                                                        |                9 |             33 |
+|  clk_10MHz                                 |                                                                  | btnC_IBUF                                                                |               21 |             58 |
+|  clk_10MHz                                 | cpu_pll/cpu_10MHz/cpu/Register_File/ctrl[31]_i_3                 |                                                                          |               32 |            128 |
++--------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+
+
