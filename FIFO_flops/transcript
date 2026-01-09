@@ -1,0 +1,44 @@
+# ** Note: (vish-4074) File vsim.wlf is still open, viewing file in live viewing mode.
+# vsim.wlf opened as dataset "vsim"
+vsim work.fifo_flops_tb
+# vsim work.fifo_flops_tb 
+# Start time: 16:54:55 on Aug 19,2024
+# Loading sv_std.std
+# Loading work.fifo_flops_tb
+# Loading work.fifo_flops
+# Loading work.mux
+# Loading work.demux
+# Loading work.Cntr_in
+# Loading work.Cntr_out
+# Loading work.flop
+run -all
+# running...
+# ** Note: $finish    : fifo_flops_tb.sv(73)
+#    Time: 765 ns  Iteration: 0  Instance: /fifo_flops_tb
+# 1
+# Break in Module fifo_flops_tb at fifo_flops_tb.sv line 73
+vsim work.fifo_flops_tb
+# End time: 16:55:08 on Aug 19,2024, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 0
+# vsim work.fifo_flops_tb 
+# Start time: 16:55:08 on Aug 19,2024
+# Loading sv_std.std
+# Loading work.fifo_flops_tb
+# Loading work.fifo_flops
+# Loading work.mux
+# Loading work.demux
+# Loading work.Cntr_in
+# Loading work.Cntr_out
+# Loading work.flop
+add wave -position insertpoint sim:/fifo_flops_tb/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Asus  Hostname: DESKTOP-TUFQ35Q  ProcessID: 12396
+#           Attempting to use alternate WLF file "./wlftxxe7sx".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxxe7sx
+run -all
+# running...
+# ** Note: $finish    : fifo_flops_tb.sv(73)
+#    Time: 765 ns  Iteration: 0  Instance: /fifo_flops_tb
+# 1
+# Break in Module fifo_flops_tb at fifo_flops_tb.sv line 73

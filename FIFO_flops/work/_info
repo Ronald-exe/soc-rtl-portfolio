@@ -1,0 +1,188 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Asus/Documents/Octavo semestre/Diseño de digitales/tarea1
+vCntr_in
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1724108077
+!i10b 1
+!s100 JVH=<YVdN>dn2XmO7a_Z03
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I=g`c<F[8=ZX9kh_?4bP7I3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Intel/tarea1 - copia
+Z5 w1724034582
+Z6 8fifo_flops.sv
+Z7 Ffifo_flops.sv
+!i122 114
+L0 42 31
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1724108077.000000
+!s107 fifo_flops.sv|fifo_flops_tb.sv|
+Z10 !s90 -sv|fifo_flops_tb.sv|fifo_flops.sv|
+!i113 1
+o-sv
+Z11 tCvgOpt 0
+n@cntr_in
+vCntr_out
+R0
+R1
+!i10b 1
+!s100 Kz[RVP6Rh9d<^e;fEdXMf2
+R2
+ICkbi`P1`dNm1dzcIjGlBR0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 114
+L0 75 35
+R8
+r1
+!s85 0
+31
+R9
+Z12 !s107 fifo_flops.sv|fifo_flops_tb.sv|
+R10
+!i113 1
+o-sv
+R11
+n@cntr_out
+vdemux
+R0
+R1
+!i10b 1
+!s100 ZFn3e:d0]cC?X9gBkFLTa0
+R2
+IGVz_7A48UVojKDTJJN7=U0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 114
+L0 123 14
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 1
+o-sv
+R11
+vfifo_flops
+R0
+R1
+!i10b 1
+!s100 PS_ek7I3DXz2LYgK1<mHE2
+R2
+In>>0dg]GH0F6::^jlP:Vz0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 114
+L0 9 31
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 1
+o-sv
+R11
+vfifo_flops_tb
+R0
+R1
+!i10b 1
+!s100 8SPL9Cl@^Z8aeZaMX0]Wj0
+R2
+IBfVnZXdNBPidRV4Xd690`3
+R3
+S1
+R4
+w1724108066
+8fifo_flops_tb.sv
+Ffifo_flops_tb.sv
+!i122 114
+L0 12 74
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 1
+o-sv
+R11
+vflop
+R0
+R1
+!i10b 1
+!s100 97<2PM>:MnRdF7i]GSCoT0
+R2
+IYg=HEYSOzVE:>57DhgPML2
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 114
+L0 139 12
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 1
+o-sv
+R11
+vmux
+R0
+R1
+!i10b 1
+!s100 BEC[lIFZ_CEb=2MEhSbm^0
+R2
+IX=[zL]F>UIR:61EOBhTDA0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 114
+L0 112 9
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 1
+o-sv
+R11
